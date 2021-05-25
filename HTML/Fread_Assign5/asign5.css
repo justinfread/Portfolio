@@ -1,0 +1,40 @@
+* { box-sizing: border-box; }
+
+header, nav, main, footer { display: block; }
+
+#wrapper { background-color: #A4A4A4; 
+	   width: 1200px;
+           margin: auto;
+           color: #330000 }
+
+#flexbox { display: flex;
+           flex-direction: row; }
+
+header { margin-bottom: 30px; }
+
+main { flex: 8; }
+
+aside { flex: 2; }
+
+body { background-color: #E6E6E6; }
+
+span { color: #FF0000;
+       font-size: 125%;
+       font-style: italic; }
+
+h2 { font-size: 2.5em;
+     margin-left: 20px; }
+
+p { font-family: Verdana, Arial, sans-serif;
+    font-size: 2em;
+    margin: 20px; }
+
+footer { font-size: 1.5em;
+         font-style: italic;
+         text-align: center; }
+
+
+
+
+
+

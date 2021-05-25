@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Portfolio</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="mobile.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+<script src="javascript.js"></script>
+</head>
+<body>
+
+<noscript>
+  <h3>This site requires JavaScript></h3>
+</noscript>
+
+<div class="nav_img">
+  <button class="openNavigation" type="button" onclick="openNav()">My Skills</button>
+  <span class="portfolio">Portfolio</span>
+  <div id="mySideNav" class="sideNav">
+    <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="Kotlin.html">Android/Kotlin</a>
+    <a href="Java.html">Java Programming</a>
+    <a href="C.html">C Programming</a> 
+    <a href="C++.html">C++ Programming</a>
+    <a href="Csharp.html">C# Programming</a>
+    <a href="html.html">Web Development</a>
+    <a href="Visual_Basic.html">Visual Basic</a>
+  </div>
+</div>
+
+<div id="flexBox">
+
+<aside id="aside_content">
+  <p id="aside_para"><br/>
+    Here I have examples of Activities, Fractions, Data Classes, and their corresponding 
+    layout files. The app in these examples is structured using the Model-View-Controller 
+    architecture. It utilizes AndroidX Jetpack libraries to handle various task including
+    saving data across process death or rotation with ViewModelProviders, RecyclerView to
+    create a recycler view UI, and the Room library to create a database. Included in the 
+    database package is the database class itself, a DAO interface, and a type converter
+    class. 
+  </p>   
+  <img id="icon_image" src="Images/robot_arms_down.PNG" alt="The Android Icon" 
+    width="200" height="179">
+  <img id="icon_image" src="Images/Kotlin-Dice.png" alt="The Android Icon" 
+    width="200" height="179">
+  <img id="icon_image" src="Images/Java_logo.jpg" alt="The Android Icon" 
+    width="200" height="179">
+</aside>
+  
+<main>
+<div id="examplePrograms">
+  <h2>Example Programs</h2>
+  <ul>
+    <li>
+      <button type="button" id="show_btn" onclick="displayProg(0,0)" >Show</button> 
+      <button type="button" id="hide_btn" onclick="displayProg(1,0)" >Hide</button> 
+      <p>
+        CriminalIntent is an app that allows its users to document bad or irresponsible office
+        behavior, name a suspect, and upload the crime to Face Book or Twitter. This app comes
+        from the book Android Programming The Big Nerd Ranch Guid that I am currently reading.
+        Among the things you can find demonstrated within this app are UI Fragments and the Fragment
+        Manager, databases and the Room API, background threads, explicit and implicit intents, and
+        much more. MainActivity is used to host two fragments: CrimeFragment, and CrimeListFragment,
+        and uses the fragment manager to switch between the two. Its layout file is used as a container
+        for the two fragments.
+      </p>
+      <object width="800" height="600" type="application/pdf" 
+        data="Kotlin_Progs/MainActivity.pdf" border="0" id="prog0"></object><br/>
+    </li>
+    <li>
+      <button type="button" id="show_btn" onclick="displayProg(0,1)" >Show</button> 
+      <button type="button" id="hide_btn" onclick="displayProg(1,1)" >Hide</button> 
+      <p>
+        CrimeListFragment holds a list of crimes and displays them in a RecyclerView. The user can click 
+        on a crime in the list which takes them to detail screen of the app where they can and add details 
+        about the crime, such as a photo, date, title for the crime, and suspect. This Fragment consist 
+        of a TextView to hold the title of the crime, another TextView to hold the description of the crime
+        and an ImageView to hold an image of handcuffs to show if the crime has solved. The user can also 
+        add a new crime by clicking on an image in the app bar labeled add crime.
+      </p>
+      <object width="800" height="600" type="application/pdf" 
+        data="Kotlin_Progs/CrimeListFragment.pdf" border="0" id="prog1"></object><br/>
+    </li>
+    <li>
+      <button type="button" id="show_btn" onclick="displayProg(0,2)" >Show</button> 
+      <button type="button" id="hide_btn" onclick="displayProg(1,2)" >Hide</button> 
+      <p>
+        CrimeFragment is the details part of the app. Once the user clicks on an existing crime or creates 
+        a new crime, CrimeFragment is inflated and the user can edit or add details of the crime. CrimeFragment
+        consist of an EditText for the title of the crime, a Button to take a picture, an ImageView to hold 
+        the photo, a Button to select a date which calls a DatePicker DialogFragment, a suspect button to choose 
+        a suspect from the user's contacts, and a CheckBox to indicate if the crime has been solved. This 
+        information is then stored in a Room database using liveData as a background thread, and the photo is 
+        stored in a file on the local disc.   
+      </p>
+      <object width="800" height="600" type="application/pdf" 
+        data="Kotlin_Progs/CrimeFragment.pdf" border="0" id="prog2"></object><br/>
+    </li>
+    <li>
+      <button type="button" id="show_btn" onclick="displayProg(0,3)" >Show</button> 
+      <button type="button" id="hide_btn" onclick="displayProg(1,3)" >Hide</button> 
+      <p>
+        CriminalIntent is structured as a Model-View-Controller app and the model classes CrimeListViewModel
+        and CrimeDetailViewModel hold the application's data and logic.
+      </p>
+      <object width="800" height="600" type="application/pdf" 
+        data="Kotlin_Progs/viewModel.pdf" border="0" id="prog3"></object><br/>
+    </li>
+    <li>
+      <button type="button" id="show_btn" onclick="displayProg(0,4)" >Show</button> 
+      <button type="button" id="hide_btn" onclick="displayProg(1,4)" >Hide</button> 
+      <p>
+        A "crime" consist of a title, the date the user observed the crime, a suspect, possibly a photo of
+        the crime scene, and whether or not the crime has been solved. All of this data is stored in a 
+        Room database with the exception of the photos which are saved to a file on the local disc and 
+        referenced via the id property of the database. The database is held in a separate package with 
+        the classes CrimeDatabase to hold the database itself, CrimeTypeConverters to handle and convert
+        data types and data being saved to the database, and an interface, CrimeDao, to handel the functions
+        to query and insert data to the database. 
+      </p>
+      <object width="800" height="600" type="application/pdf" 
+        data="Kotlin_Progs/viewModel.pdf" border="0" id="prog4"></object><br/>
+    </li>
+    <li>
+      <button type="button" id="show_btn" onclick="displayProg(0,5)" >Show</button> 
+      <button type="button" id="hide_btn" onclick="displayProg(1,5)" >Hide</button> 
+      <p>
+        CriminalIntent uses the Room library and MySQLite to create a database that stores the date the crime
+        was recorded, the name of a potential suspect, the title of the crime, if the crime is solved,
+        and a UUID for the crime. The database consists of CrimeDatabase, a class to hold the database itself, 
+        CrimeDao, a DAO interface to handle the MySQLite functions, a CrimeTypeConverters class to convert 
+        the data being saved and retrieved from the database, and CrimeRepository, a class to encapsulate the 
+        logic for accessing data from the database. Room uses Crime.kt to structure the database using
+        @Entity and @PrimaryKey. liveData is used to save and retrieve data on a background thread.
+      </p>
+      <object width="800" height="600" type="application/pdf" 
+        data="Kotlin_Progs/CrimeDatabase.pdf" border="0" id="prog5"></object><br/>
+    </li>
+    <li>
+      <button type="button" id="show_btn" onclick="displayProg(0,6)" >Show</button> 
+      <button type="button" id="hide_btn" onclick="displayProg(1,6)" >Hide</button> 
+      <p>
+        CriminalIntent uses an additional DialogFragment, DatePickerFragment to give the user a date Dialog box
+        to choose a date for the crime when they click on the date button.
+      </p>
+      <object width="800" height="600" type="application/pdf" 
+        data="Kotlin_Progs/datePicker.pdf" border="0" id="prog6"></object><br/>
+    </li>
+  </ul>
+</div>
+</main>
+
+</div> <!-- End FlexBox -->
+
+<footer class="clearfix">
+  <a href="mailto:justin.fread.m@gmail.com">
+   justin.fread.m@gmail</a><br>Justin Fread
+   <p>
+       <a href="http://jigsaw.w3.org/css-validator/check/referer">
+       <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+       </a>
+   </p>
+</footer>
+
+</body>
+</html>

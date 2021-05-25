@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Form</title>
+<meta charset="utf-8">
+<link href="Assign3.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+</head>
+<body>
+<div id="wrapper">
+<header>
+  Music Survey
+</header>
+<main>
+  <form>
+    <label for="myName">Name</label><br>
+     <input type="text" name="myName" id="myName" required="required"><br>
+    <label for="myEmail">Email</label><br>
+     <input type="email" name="myEmail" id="myEmail" required="required">
+  <fieldset>
+  <legend>Select Your Favorite Types of Music:</legend>
+    <input type="checkbox" name="pop" id="pop" value="isChecked">
+     Pop<br>
+    <input type="checkbox" name="classical" id="classical" value="isChecked">
+     Classical<br>    
+    <input type="checkbox" name="rock" id="rock" value="isChecked">
+     Rock<br>    
+    <input type="checkbox" name="folk" id="folk" value="isChecked">
+     Folk<br>    
+    <input type="checkbox" name="rap" id="rap" value="isChecked">
+     Rap<br>    
+    <input type="checkbox" name="other" id="other" value="isChecked">
+     Other<br>        
+  </fieldset> 
+  <fieldset>
+  <legend>Select how often you purchase Music CDs:</legend>
+    <input type="radio" name="oftPurchase" id="purchaseWeekly" value="weekly">
+     Weekly<br>
+    <input type="radio" name="oftPurchase" id="purchaseYearly" value="yearly">
+     A few CDs each year<br>
+    <input type="radio" name="oftPurchase" id="purchaseMonthly" value="monthly">
+     Monthly<br>
+    <input type="radio" name="oftPurchase" id="purchaseNever" value="never">
+     Never purchase<br>
+  </fieldset>
+    <label for="listenLocal">Select the locations you listen to music</label><br>
+    <select size="3" name="listenLocal" id="listenLocal">
+      <option value="At Home">At Home</option>
+      <option value="In the car">In the car</option>
+      <option value="Anywhere">Anywhere (MP3 Player)</option>
+      <option value="Nowhere">Nowhere</option>
+    </select><br> 
+  <label for="comment">What role does music play in your life?</label><br>
+    <textarea name="comment" id="comment" rows="5" cols="auto"></textarea><br>
+    <input type="submit" id="mySubmit" value="Submit">
+    <input type="reset" id="mySubmit" value="Reset">     
+  </form> 
+</main> 
+<footer>
+  <a href="mailto:justin.fread@nc.navarrocollege.edu">justin.fread@nc</a><br>
+   Justin Fread<br>ITSE.2302
+</footer> 
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

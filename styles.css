@@ -1,0 +1,234 @@
+*{ box-sizing: border-box; }
+
+header, main, footer{ display: block; }   
+
+object { display: none; }
+
+#flexBox {
+        display: flex;
+        flex-direction: row;
+}
+
+.nav_img {
+        background-image: url(Images/banner.PNG);       
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.openNavigation {
+        border: none;
+        background-color: #000000;
+        color: #999999;
+        padding: 5px;
+        text-align: center;
+        text-decoration: underline;
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        margin-top: 50px;
+        margin-left: 20px;
+        cursor: pointer;
+}
+
+.openNavigation:hover {
+        color: #f1f1f1;
+}
+
+span.portfolio {
+        font-family: Georgia, serif;
+        font-size: 5em;
+        color: #f1f1f1;
+        display: inline-block;
+        margin-left: 8em;      
+}
+
+.sideNav {
+        border-right: 1px solid #f1f1f1;
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0;
+        left: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.3s; /* 0.3 second transition effect to slide in the sideNav */
+}
+      
+/* The navigation menu links */
+.sideNav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+}
+      
+/* When you mouse over the navigation links, change their color */
+.sideNav a:hover {
+        color: #f1f1f1;
+}
+      
+/* Position and style the close button (top right corner) */
+.sideNav .closeBtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+} /* End navigation styles */
+      
+/*Change the background image of home, about, and contact*/
+#home_body {
+        background-image: url(Images/Sunset1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+} 
+
+#about_body {
+        background-image: url(Images/fire_lake.JPG);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+}
+
+#contact_body {
+        background-image: url(Images/Sunset1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;       
+}
+
+/*Home has no <p> and only contains div flexBox and main to position the footer
+at the bottom of the page*/
+#home_main {
+        visibility: hidden;
+        margin-bottom: 600px;
+}
+
+#about_contact_main {
+        opacity: 0.85;
+        margin-bottom: 600px;
+        margin-left: 5em;
+        margin-right: 5em;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
+        background-color: #707070;
+}
+
+/* Styles for all pages */
+#about_contact_p {
+        text-justify: inter-word;
+        text-align: justify;
+        margin: 2em;
+        font-size: 1em;
+        font-family: Arial, Verdana, sans-serif;
+        background-color: #707070;
+        color: #f1f1f1;
+}
+
+main { 
+        background-color: #f1f1f1;
+        font-size: 1em;
+        font-family: Arial, Verdana, sans-serif;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
+        margin-left: 125px;
+        margin-right: 15px;
+        margin-top: 30px;
+        margin-bottom: 300px;
+        flex: 6;
+}
+
+body { 
+        background-color: #f1f1f1;
+	color: #666666;
+        font-family: Arial, Verdana, sans-serif;
+        margin: 0;
+}
+
+#aside_content {
+        margin-bottom: 0;
+        float: left;
+        flex: 2.5;
+        background-color: #707070;
+        border-right: #111 solid 1px;
+}
+
+#icon_image {
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+#aside_para {
+        width: 90%;
+        margin: auto;
+        text-justify: inter-word;
+        text-align: justify;
+        font-family: Arial, Verdana, sans-serif;
+        font-size: 1em;
+        color: #f0f0f0;
+}
+
+#show_btn {
+        min-width: 75px;
+        border: none;
+        background-color: #707070;
+        color:#f1f1f1;
+        font-size: 1em;
+        font-family: Arial, Verdana, sans-serif;
+        margin-right: 20px;
+}
+
+#hide_btn {
+        min-width: 75px;
+        border: none;
+        background-color: #707070;
+        color: #f1f1f1;
+        font-size: 1em;
+        font-family: Arial, Verdana, sans-serif;
+}
+
+footer { 
+        background-color: #000000;
+        font-size: 1em;
+        text-align: center;
+        padding: 10px;       
+        width: 100%;
+}
+
+h2 {
+        background-image: linear-gradient(-90deg, #222222,/* #226655*/#707070, #222222);
+        margin-top: 0;
+        padding: 10px;
+        color: #f1f1f1;
+        font-family: Georgia, serif;
+        font-size: 2em;
+}
+
+#examplePrograms p {
+        text-justify: inter-word;
+        text-align: justify;
+        margin-right: 1.5em;
+}
+
+/* Needed for the html.html page links */
+#examplePrograms a { 
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        text-align: left;
+        background-color: #f1f1f1;
+        min-width: 220px; 
+        min-height: 38px; 
+}
+#examplePrograms ul { list-style-type: none; }
+#examplePrograms a:link { color: #000033; }
+#examplePrograms a:visited { color: #344837; }
+#examplePrograms a:hover { color: #90C7E3; }

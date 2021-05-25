@@ -1,0 +1,108 @@
+* { box-sizing: border-box; }
+
+@media only screen and (max-width: 1024px) {
+
+    .openNavigation {
+        font-size: 2em;
+    }
+
+    object {
+        width: 300px;
+        height: 600px;
+    }
+
+    body { 
+        margin: 0;
+        padding: 0; 
+    }
+
+    nav {
+        float: none;
+        width: auto;
+        padding: 0.5; 
+        margin-bottom: 3em; 
+    }
+
+    nav li {
+        display: inline-block; 
+        min-width: 95%; 
+        font-size: 1.5em; 
+        border: 1px solid #000000; 
+    }
+
+    nav a {
+        padding: 1em; 
+        box-shadow: none; 
+    }
+
+    main {
+        padding: 0.5em;
+        margin: 0.5em;
+        font-size: 1.2em;
+        box-shadow: none; 
+    }
+
+    #show_btn {
+        font-size: 1.3em;
+    }
+
+    #hide_btn {
+        font-size: 1.3em;
+    }
+
+    #aside_para {
+        font-size: 1.3em;
+    }
+    
+    footer {
+        padding: 20px;
+    }
+}
+
+/*Small Screens*/
+@media only screen and (max-width: 768px) {
+
+    nav { padding: 0; }
+
+    nav a {
+        display: block;
+        padding: 0.2em;
+        font-size: 1.3em; 
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0; 
+    }
+
+    nav li {
+        display: block;
+        margin: 0;
+        padding: 0; 
+    }
+
+    main {
+        padding: 0.1em 0.6em 0.1em 0.4em;     
+    }
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sideNav 
+(less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sideNav {
+        padding-top: 15px;
+    }
+    .sideNav a {
+        font-size: 18px;
+    }
+}
+    
+
+
+
+
+
+
+
+

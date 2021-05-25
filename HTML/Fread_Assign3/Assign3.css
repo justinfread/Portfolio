@@ -1,0 +1,14 @@
+#wrapper { background-color: #eaeaea;
+           width: 80%;
+           margin-right: auto;
+           margin-left: auto; }
+
+footer { margin-top: 100px; 
+         text-align: center; }
+
+header { font-size: 200%;
+         font-family: "Times New Roman", Times, serif; }
+
+fieldset { margin: 1em 0em 3em 0em; }
+
+

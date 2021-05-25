@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Reservations</title>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<link href="pacific.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script>
+function validateForm() 
+{
+   if (document.forms[0].myEmail.value == "" )
+   {
+      alert("Please enter an e-mail adress.")
+      return false;
+   } // end if
+return true     
+} // end function validateForm
+</script>
+<script src="http://htmlshim.google.com/svn/trunk/html5.js">
+</script>
+<! [endif]-->
+</head>
+<body>
+<div id="wrapper">
+<Header>
+  <h1>Pacific Trails Resort</h1>
+</header>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="yurts.html">Yurts</a></li> 
+    <li><a href="activities.html">Activities</a></li>
+    <li><a href="reservations.html">Reservations</a></li>
+    <li><a href="shop.html">Shop</a></li>
+  </ul>
+</nav>
+<div id="homehero"></div>
+<main>
+  <h2>Reservations at Pacific Trails</h2>
+  <h3>Contact Us</h3>
+<form method="post" onsubmit="return "validateForm();" 
+   action="http://webdevbasics.net/scripts/demo.php">
+  <label for="myFName">First Name</label>
+   <input type="text" name="myFName" id="myFName">
+  <label for="myLName">Last Name</label>
+   <input type="text" name="myLName" id="myLName">
+  <label for="myEmail">Email</label>
+   <input type="email" name="myEmail" id="myEmail">
+  <label for="myPhone">Phone</label>
+   <input type="tel" name="myPhone" id="myPhone">
+  <label for="myDate">Arrival Date</label>
+   <input type="date" name="myDate" id="myDate">
+  <label for="myNights">Nights</label>
+   <input type="number" name="myNights" id="myNights" min="1" max="14">
+  <label for="myComments">Comments</label>
+   <textarea name="myComments" id="myComments" rows="2" cols="20"
+    required="required"></textarea>  
+  <input id="mySubmit" type="submit" value="Submit">
+</form>
+</main>
+<footer>
+  Copyright &copy;2016 Pacific Trails Resort<br>
+  <a href="mailto:justin.fread@nc.navarrocollege.edu">
+  justin.fread@nc</a><br>Justin Fread<br>itse.2302
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" /></a>
+</p>
+</footer>
+</div>
+</body>
+</html>

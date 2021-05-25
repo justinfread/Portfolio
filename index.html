@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="javascript.js"></script>
+  </head>
+
+  <body id="home_body">
+    <noscript>
+      <h3>This site requires JavaScript></h3>
+    </noscript>
+
+    <div class="nav_img">
+      <button class="openNavigation" type="button" onclick="openNav()">
+        My Skills
+      </button>
+      <a class="openNavigation" href="About.html">About Me</a>
+      <a class="openNavigation" href="Contact.html">Contact Me</a>
+      <span class="portfolio">Portfolio</span>
+      <div id="mySideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="Kotlin.html">Android/Kotlin</a>
+        <a href="Java.html">Java Programming</a>
+        <a href="C.html">C Programming</a>
+        <a href="C++.html">C++ Programming</a>
+        <a href="Csharp.html">C# Programming</a>
+        <a href="html.html">Web Development</a>
+        <a href="Visual_Basic.html">Visual Basic</a>
+      </div>
+    </div>
+
+    <div id="flexBox">
+      <main id="home_main"></main>
+    </div>
+
+    <footer>
+      <a href="mailto:justin.fread.m@gmail.com"> justin.fread.m@gmail</a><br>Justin Fread
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img
+            style="border: 0; width: 88px; height: 31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!"/></a>
+      </p>
+    </footer>
+  </body>
+</html>

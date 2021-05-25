@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mobile.css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+  </script>
+  <![endif]-->
+  <script src="javascript.js"></script>
+</head>
+
+<body>
+
+  <noscript>
+    <h3>This site requires JavaScript></h3>
+  </noscript>
+
+  <div class="nav_img">
+    <button class="openNavigation" type="button" onclick="openNav()">My Skills</button>
+    <span class="portfolio">Portfolio</span>
+    <div id="mySideNav" class="sideNav">
+      <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="Kotlin.html">Android/Kotlin</a>
+      <a href="Java.html">Java Programming</a>
+      <a href="C.html">C Programming</a>
+      <a href="C++.html">C++ Programming</a>
+      <a href="Csharp.html">C# Programming</a>
+      <a href="html.html">Web Development</a>
+      <a href="Visual_Basic.html">Visual Basic</a>
+    </div>
+  </div>
+
+  <div id="flexBox">
+
+    <aside id="aside_content">
+      <img id="icon_image" src="Images/Java_logo.jpg" alt="The Java Icon" width="300" height="188">
+      <p id="aside_para"><br />
+
+      </p>
+    </aside>
+
+    <main>
+      <div id="examplePrograms">
+        <h2>Example Programs</h2>
+        <ul>
+          <li>
+            <button type="button" id="show_btn" onclick="displayProg(0,0)">Show</button>
+            <button type="button" id="hide_btn" onclick="displayProg(1,0)">Hide</button>
+            <p>
+              Program that calculates student averages, course averages, class median,
+              highest and lowest grades, and awards a scholarship to eligible students
+              The program runs until the user has entered as many classes and students
+              desired and prints the results in a tabular format
+            </p>
+            <object width="800" height="600" type="application/pdf" data="Java_Progs/Program0.pdf" border="0"
+              id="prog0"></object><br />
+          </li>
+          <li>
+            <button type="button" id="show_btn" onclick="displayProg(0,1)">Show</button>
+            <button type="button" id="hide_btn" onclick="displayProg(1,1)">Hide</button>
+            <p>
+              Program that creates and manipulates a custom stack class
+              Class Stack pushes and pops items onto and off of the stack,
+              as well as telling the user when the stack is full or empty.
+              Class Stack also enables the user to push many items onto the stack
+              at one time
+            </p>
+            <object width="800" height="600" type="application/pdf" data="Java_Progs/Program1.pdf" border="0"
+              id="prog1"></object><br />
+          </li>
+          <li>
+            <button type="button" id="show_btn" onclick="displayProg(0,2)">Show</button>
+            <button type="button" id="hide_btn" onclick="displayProg(1,2)">Hide</button>
+            <p>
+              Program that creates and manipulates a custom linked list class
+              The Link class allows the user to add items, delete items, sort those items
+              in ascending and descending order, shuffle the items, and allows the
+              user to delete items from anywhere in the list
+              Program also utilizes the JOptionPane GUI class
+            </p>
+            <object width="800" height="600" type="application/pdf" data="Java_Progs/Program2.pdf" border="0"
+              id="prog2"></object><br />
+          </li>
+          <li>
+            <button type="button" id="show_btn" onclick="displayProg(0,3)">Show</button>
+            <button type="button" id="hide_btn" onclick="displayProg(1,3)">Hide</button>
+            <p>
+              Program that creates and manipulates a custom priority queue class
+              The main program instantiates two priority queue objects, populates
+              them with data, prints each queue's data, and calculates the
+              Union, Difference, and Intersection of the priority queues, then
+              prints the information in tabulated format
+            </p>
+            <object width="800" height="600" type="application/pdf" data="Java_Progs/Program3.pdf" border="0"
+              id="prog3"></object><br />
+          </li>
+          <li>
+            <button type="button" id="show_btn" onclick="displayProg(0,4)">Show</button>
+            <button type="button" id="hide_btn" onclick="displayProg(1,4)">Hide</button>
+            <p>
+              Program that uses inheritance to instantiate objects for salary workers
+              and hourly workers. The SalaryWorkers class inherits the ID field,
+              and set and get ID functions from the Employees class. One of the PrintPay
+              methods in the SalaryWorkers class overrides the PrintPay of the
+              super class by using the @override tag while the other uses a different
+              parameter list
+            </p>
+            <object width="800" height="600" type="application/pdf" data="Java_Progs/Program4.pdf" border="0"
+              id="prog4"></object><br />
+          </li>
+        </ul>
+      </div>
+    </main>
+
+  </div>
+  <!--End FlexBox-->
+
+  <footer>
+    <a href="mailto:justin.fread.m@gmail.com">
+      justin.fread.m@gmail</a><br>Justin Fread
+    <p>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+          alt="Valid CSS!" />
+      </a>
+    </p>
+  </footer>
+
+</body>
+
+</html>
